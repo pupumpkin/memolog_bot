@@ -44,8 +44,8 @@
     - [Telegram](https://t.me/mrisxxs)
     - [Почта](atrosenko596@gmail.com)
 - Петя
-    - [Telegram]()
-    - [Почта]()
+    - [Telegram](https://t.me/FrozenFly1)
+    - [Почта](peterxpotapov@gmail.com)
 - Ярослав
     - [Telegram](https://t.me/Pl1nTuS32)
     - [Почта](farev752@gmail.com)
