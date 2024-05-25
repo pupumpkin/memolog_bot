@@ -9,14 +9,14 @@ reddit = praw.Reddit(client_id=REDDIT_CLIENT_ID, client_secret=REDDIT_CLIENT_SEC
 
 
 # Функция для получения случайного мема по тегу с редита
-def get_random_meme_by_tag(tag, sort, time_filter):
+def get_random_meme_by_tag(tag, sort):
     # Выбираем посты из сообщества r/memes по тегу и сортировке
     subreddit = reddit.subreddit('memes')
-    meme_posts = list(subreddit.search(tag, sort=sort, time_filter=time_filter, limit=50))
+    meme_posts = list(subreddit.search(tag, sort=sort, time_filter='all', limit=50))
 
     if not meme_posts:
         raise Exception(
-            f"Не удалось найти мемы по тегу '{tag}' с сортировкой '{sort}' и фильтром времени '{time_filter}'")
+            f"Не удалось найти мемы по тегу '{tag}' с сортировкой '{sort}'")
 
     # Выбираем случайный пост из найденных
     random_post = choice(meme_posts)
